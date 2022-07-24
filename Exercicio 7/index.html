@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevinMusic</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="text-center">DevinMusic</h1>
+
+        <nav> 
+            <ul class="navbar">
+                <li><a href="">Evento</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="event-section">
+            <div class="main-event text-center">
+                <img src="banner.jpg" alt="">
+                <h2>Gusttavo Lima</h2>
+                <p>O Embaixador</p>
+                <p>São José dos Campos — 20 de Agosto 2022, 19h.</p>
+                <Button>Comprar Ingresso.</Button>
+            </div>
+            <br>
+        </section>
+
+        <section class="eventos">
+            <div class="card text-center">
+                <img class="img1" src="1.jpg" alt="">
+                <h2>Maiara e Maraisa</h2>
+                <p>21 de Agosto</p>
+                <Button>Comprar Ingresso.</Button>
+            </div>
+
+            <div class="card text-center">
+                <img class="img2" src="2.jpg" alt="">
+                <h2>Henrique e Juliano</h2>
+                <p>22 de Agosto</p>
+                <Button>Comprar Ingresso.</Button>
+            </div>
+
+            <div class="card text-center">
+                <img class="img3" src="3.jpg" alt="">
+                <h2>Clayton e Romário</h2>
+                <p>23 de Agosto</p>
+                <Button>Comprar Ingresso.</Button>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <section class="form">
+        <form action="" id="form" onsubmit="formData(event)">
+        <h2 class="text-center">Alguma duvida? Entre em contato conosco!</h2>
+        <textarea name="nome" id="textarea-name" rows="1" placeholder="Nome:"></textarea>
+        <textarea name="email" id="textarea-email" rows="1" placeholder="E-mail:"></textarea>
+        <textarea name="mensagem" id="textarea-message" rows="5" placeholder="Mensagem:"></textarea>
+        <button class="send-button" type="submit">Enviar</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <footer class="text-center">
+            <p>Copyright 2022 — All rights reserved to Reported Events Corp.</p> 
+            <p>+5512-8899-9966</p>
+            <p>devin@gmail.com</p>
+            <p>DevinMusic</p>
+        </footer>
+    </section>
+    <script>
+        function formData (){
+            event.preventDefault();
+            var userName = document.getElementById("textarea-name")
+            var userEmail = document.getElementById("textarea-email")
+            var userMessage = document.getElementById("textarea-message")
+    
+            console.log(userName.value)
+            console.log(userEmail.value)
+            console.log(userMessage.value)
+    
+            alert(userName.value + "\n" + userEmail.value + "\n" + userMessage.value)
+        }
+    </script>
+</body>
+
+</html>
